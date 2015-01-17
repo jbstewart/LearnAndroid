@@ -45,7 +45,16 @@ namespace GeoQuiz.X
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int arrow_left = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int arrow_right = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int ic_launcher = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int Icon = 2130837507;
 			
 			static Drawable()
 			{
@@ -60,11 +69,17 @@ namespace GeoQuiz.X
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050001
-			public const int FalseButton = 2131034113;
+			// aapt resource value: 0x7f050002
+			public const int FalseButton = 2131034114;
+			
+			// aapt resource value: 0x7f050003
+			public const int NextButton = 2131034115;
 			
 			// aapt resource value: 0x7f050000
-			public const int TrueButton = 2131034112;
+			public const int QuestionTextView = 2131034112;
+			
+			// aapt resource value: 0x7f050001
+			public const int TrueButton = 2131034113;
 			
 			static Id()
 			{
@@ -98,17 +113,32 @@ namespace GeoQuiz.X
 			// aapt resource value: 0x7f040005
 			public const int ApplicationName = 2130968581;
 			
-			// aapt resource value: 0x7f040002
-			public const int CorrectToast = 2130968578;
+			// aapt resource value: 0x7f040003
+			public const int CorrectToast = 2130968579;
 			
 			// aapt resource value: 0x7f040001
 			public const int FalseButton = 2130968577;
 			
-			// aapt resource value: 0x7f040003
-			public const int IncorrectToast = 2130968579;
-			
 			// aapt resource value: 0x7f040004
-			public const int QuestionText = 2130968580;
+			public const int IncorrectToast = 2130968580;
+			
+			// aapt resource value: 0x7f040002
+			public const int NextButton = 2130968578;
+			
+			// aapt resource value: 0x7f040006
+			public const int Question1 = 2130968582;
+			
+			// aapt resource value: 0x7f040007
+			public const int Question2 = 2130968583;
+			
+			// aapt resource value: 0x7f040008
+			public const int Question3 = 2130968584;
+			
+			// aapt resource value: 0x7f040009
+			public const int Question4 = 2130968585;
+			
+			// aapt resource value: 0x7f04000a
+			public const int Question5 = 2130968586;
 			
 			// aapt resource value: 0x7f040000
 			public const int TrueButton = 2130968576;

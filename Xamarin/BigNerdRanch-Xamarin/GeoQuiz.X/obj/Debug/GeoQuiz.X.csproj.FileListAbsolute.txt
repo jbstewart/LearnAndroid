@@ -1,4 +1,3 @@
-C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\GeoQuiz.X.csprojResolveAssemblyReference.cache
 C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\bin\Debug\GeoQuiz.X.dll
 C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\bin\Debug\GeoQuiz.X.pdb
 C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\bin\Debug\GeoQuiz.X.dll.mdb
@@ -10,5 +9,15 @@ C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQui
 C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\res\layout\main.xml
 C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\res\values\strings.xml
 C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\res\drawable\icon.png
+C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\res\drawable-hdpi\arrow_left.png
+C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\res\drawable-hdpi\arrow_right.png
+C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\res\drawable-hdpi\ic_launcher.png
+C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\res\drawable-mdpi\arrow_left.png
+C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\res\drawable-mdpi\arrow_right.png
+C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\res\drawable-mdpi\ic_launcher.png
+C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\res\drawable-xhdpi\arrow_left.png
+C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\res\drawable-xhdpi\arrow_right.png
+C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\res\drawable-xhdpi\ic_launcher.png
 C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\R.cs.flag
 C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\uploadflags.txt
+C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\GeoQuiz.X.csprojResolveAssemblyReference.cache
