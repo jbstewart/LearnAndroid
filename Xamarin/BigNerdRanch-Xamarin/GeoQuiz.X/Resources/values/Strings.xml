@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="Hello">Hello World, Click Me!</string>
-    <string name="ApplicationName">GeoQuiz.X</string>
+	<string name="TrueButton">True</string>
+	<string name="FalseButton">False</string>
+	<string name="CorrectToast">Correct!</string>
+	<string name="IncorrectToast">Incorrect!</string>
+	<string name="QuestionText">Constantinople is the largest city in Turkey?</string>
+	<string name="ApplicationName">GeoQuiz.X</string>
 </resources>

@@ -14,13 +14,18 @@ public final class R {
         public static final int icon=0x7f020000;
     }
     public static final class id {
-        public static final int MyButton=0x7f050000;
+        public static final int FalseButton=0x7f050001;
+        public static final int TrueButton=0x7f050000;
     }
     public static final class layout {
         public static final int main=0x7f030000;
     }
     public static final class string {
-        public static final int ApplicationName=0x7f040001;
-        public static final int Hello=0x7f040000;
+        public static final int ApplicationName=0x7f040005;
+        public static final int CorrectToast=0x7f040002;
+        public static final int FalseButton=0x7f040001;
+        public static final int IncorrectToast=0x7f040003;
+        public static final int QuestionText=0x7f040004;
+        public static final int TrueButton=0x7f040000;
     }
 }

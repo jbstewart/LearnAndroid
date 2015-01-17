@@ -1,0 +1,14 @@
+C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\GeoQuiz.X.csprojResolveAssemblyReference.cache
+C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\bin\Debug\GeoQuiz.X.dll
+C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\bin\Debug\GeoQuiz.X.pdb
+C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\bin\Debug\GeoQuiz.X.dll.mdb
+C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\bin\Debug\GeoQuiz.X.apk
+C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\bin\Debug\GeoQuiz.X-Signed.apk
+C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\GeoQuiz.X.dll
+C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\GeoQuiz.X.pdb
+C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\android\bin\GeoQuiz.X.apk
+C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\res\layout\main.xml
+C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\res\values\strings.xml
+C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\res\drawable\icon.png
+C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\R.cs.flag
+C:\Dev\AndroidDev\NerdRanchBook\LearnAndroid\Xamarin\BigNerdRanch-Xamarin\GeoQuiz.X\obj\Debug\uploadflags.txt

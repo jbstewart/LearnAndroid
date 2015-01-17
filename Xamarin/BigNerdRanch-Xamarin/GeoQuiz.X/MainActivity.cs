@@ -1,17 +1,14 @@
-﻿using System;
-using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
+﻿using Android.App;
 using Android.Widget;
 using Android.OS;
 
 namespace GeoQuiz.X
 {
-	[Activity(Label = "GeoQuiz.X", MainLauncher = true, Icon = "@drawable/icon")]
+	[Activity(Label = "GeoQuiz.X", MainLauncher = true, Icon = "@drawable/icon", Theme = "@android:style/Theme.Holo.Light")]
 	public class MainActivity : Activity
 	{
-		int count = 1;
+		private Button _trueButton;
+		private Button _falseButton;
 
 		protected override void OnCreate(Bundle bundle)
 		{
@@ -22,9 +19,17 @@ namespace GeoQuiz.X
 
 			// Get our button from the layout resource,
 			// and attach an event to it
-			Button button = FindViewById<Button>(Resource.Id.MyButton);
+			_trueButton = FindViewById<Button>(Resource.Id.TrueButton);
+			_falseButton = FindViewById<Button>(Resource.Id.FalseButton);
 
-			button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+			_trueButton.Click += delegate
+			{
+				Toast.MakeText(this, Resource.String.IncorrectToast, ToastLength.Short).Show();
+			};
+			_falseButton.Click += delegate
+			{
+				Toast.MakeText(this, Resource.String.CorrectToast, ToastLength.Short).Show();
+			};
 		}
 	}
 }
