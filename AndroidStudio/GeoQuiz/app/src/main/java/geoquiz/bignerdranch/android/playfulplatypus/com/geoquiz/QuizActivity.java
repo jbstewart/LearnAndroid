@@ -1,5 +1,6 @@
 package geoquiz.bignerdranch.android.playfulplatypus.com.geoquiz;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -17,10 +18,13 @@ public class QuizActivity extends ActionBarActivity {
     private Button mTrueButton;
     private Button mFalseButton;
     private ImageButton mNextButton;
+    private Button mCheatButton;
     private TextView mQuestionTextView;
     private int mCurrentQuestion = 0;
+    private boolean mIsACheater;
     private static final String TAG = "QuizActivity";
     private static final String KEY_INDEX = "index";
+    private static final String KEY_IS_A_CHEATER = "is_a_cheater";
 
     private TrueFalse[] mQuestionBank = new TrueFalse[] {
             new TrueFalse(R.string.question1, true),
@@ -58,9 +62,20 @@ public class QuizActivity extends ActionBarActivity {
                 nextQuestion();
             }
         });
+        mCheatButton = (Button)findViewById(R.id.cheat_button);
+        mCheatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(QuizActivity.this, CheatActivity.class);
+                i.putExtra(CheatActivity.EXTRA_ANSWER_IS_TRUE, mQuestionBank[mCurrentQuestion].isAnswerTrue());
+                startActivityForResult(i, 0);
+            }
+        });
 
-        if (savedInstanceState != null)
+        if (savedInstanceState != null) {
             mCurrentQuestion = savedInstanceState.getInt(KEY_INDEX, 0);
+//            mIsACheater = savedInstanceState.getBoolean(KEY_IS_A_CHEATER, false);
+        }
         displayQuestion();
     }
 
@@ -68,31 +83,17 @@ public class QuizActivity extends ActionBarActivity {
     protected void onSaveInstanceState  (Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putInt(KEY_INDEX, mCurrentQuestion);
+//        outState.putBoolean(KEY_INDEX, mIsACheater);
     }
 
     @Override
-    protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (data != null) {
+            mIsACheater = data.getBooleanExtra(CheatActivity.EXTRA_DID_THEY_CHEAT, false);
+            if (mIsACheater)
+                mCheatButton.setEnabled(false);
+        }
     }
 
     private void nextQuestion() {
@@ -103,15 +104,26 @@ public class QuizActivity extends ActionBarActivity {
     private void displayQuestion() {
         mQuestionTextView.setText(mQuestionBank[mCurrentQuestion].getQuestion());
         mNextButton.setEnabled(false);
-//        mQuestionTextView.setEnabled(false);
+        mCheatButton.setEnabled(true);
+        mIsACheater = false;
     }
 
     private void scoreAnswer(boolean b) {
-        Toast.makeText(QuizActivity.this, (b == mQuestionBank[mCurrentQuestion].isAnswerTrue()) ? R.string.correct_toast : R.string.incorrect_toast, Toast.LENGTH_SHORT).show();
-        mNextButton.setEnabled(true);
-//        mQuestionTextView.setEnabled(true);
-    }
+        int messageID = 0;
+        if (mIsACheater) {
+            if (b == mQuestionBank[mCurrentQuestion].isAnswerTrue())
+                messageID = R.string.judgement_toast_correct;
+            else
+                messageID = R.string.judgement_toast_incorrect;
+        }
+        else if (b == mQuestionBank[mCurrentQuestion].isAnswerTrue())
+            messageID = R.string.correct_toast;
+        else
+            messageID = R.string.incorrect_toast;
 
+        Toast.makeText(QuizActivity.this, messageID, Toast.LENGTH_SHORT).show();
+        mNextButton.setEnabled(true);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
