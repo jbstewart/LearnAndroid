@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:id="@+id/QuestionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="24dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/TrueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TrueButton" />
+        <Button
+            android:id="@+id/FalseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FalseButton" />
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/NextButton"
+        android:src="@drawable/arrow_right"
+        android:layout_gravity="bottom|right"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="@string/NextButton" />
+</FrameLayout>

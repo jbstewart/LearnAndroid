@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Android.App;
 using Android.Content;
+using Android.Util;
 using Android.Widget;
 using Android.OS;
 
@@ -28,6 +29,9 @@ namespace GeoQuiz.X
 		private TextView _questionTextView;
 		private int _currentQuestionIndex;
 		private readonly List<TrueFalse> _questionBank = new List<TrueFalse>();
+		private const string Tag = "MainActivity";
+		private const string KeyIndex = "index";
+
 
 		public MainActivity()
 		{
@@ -52,8 +56,46 @@ namespace GeoQuiz.X
 			_falseButton.Click += (sender, args) => ScoreQuestion(false);
 			_nextButton.Click += (sender, args) => NextQuestion();
 
+			if (bundle != null)
+				_currentQuestionIndex = bundle.GetInt(KeyIndex, 0);
 			LoadQuestions();
 			DisplayQuestion();
+		}
+
+		protected override void OnDestroy()
+		{
+			base.OnDestroy();
+			Log.Debug(Tag, "OnDestroy() called");
+		}
+
+		protected override void OnPause()
+		{
+			base.OnPause();
+			Log.Debug(Tag, "OnPause() called");
+		}
+
+		protected override void OnResume()
+		{
+			base.OnResume();
+			Log.Debug(Tag, "OnResume() called");
+		}
+
+		protected override void OnStart()
+		{
+			base.OnStart();
+			Log.Debug(Tag, "OnStart() called");
+		}
+
+		protected override void OnStop()
+		{
+			base.OnStop();
+			Log.Debug(Tag, "OnStop() called");
+		}
+
+		protected override void OnSaveInstanceState(Bundle outState)
+		{
+			base.OnSaveInstanceState(outState);
+			outState.PutInt(KeyIndex, _currentQuestionIndex);
 		}
 
 		private void LoadQuestions()
