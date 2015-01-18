@@ -62,36 +62,6 @@ namespace GeoQuiz.X
 			DisplayQuestion();
 		}
 
-		protected override void OnDestroy()
-		{
-			base.OnDestroy();
-			Log.Debug(Tag, "OnDestroy() called");
-		}
-
-		protected override void OnPause()
-		{
-			base.OnPause();
-			Log.Debug(Tag, "OnPause() called");
-		}
-
-		protected override void OnResume()
-		{
-			base.OnResume();
-			Log.Debug(Tag, "OnResume() called");
-		}
-
-		protected override void OnStart()
-		{
-			base.OnStart();
-			Log.Debug(Tag, "OnStart() called");
-		}
-
-		protected override void OnStop()
-		{
-			base.OnStop();
-			Log.Debug(Tag, "OnStop() called");
-		}
-
 		protected override void OnSaveInstanceState(Bundle outState)
 		{
 			base.OnSaveInstanceState(outState);
