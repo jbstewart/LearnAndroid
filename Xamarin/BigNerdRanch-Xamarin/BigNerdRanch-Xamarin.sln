@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30324.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoQuiz.X", "GeoQuiz.X\GeoQuiz.X.csproj", "{A46DC660-F533-4C36-9573-1F9B625586D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriminalIntent.X", "CriminalIntent.X\CriminalIntent.X.csproj", "{3723BFD6-B6A7-4CD2-8FDA-0608581E9D9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,12 @@ Global
 		{A46DC660-F533-4C36-9573-1F9B625586D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A46DC660-F533-4C36-9573-1F9B625586D7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A46DC660-F533-4C36-9573-1F9B625586D7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3723BFD6-B6A7-4CD2-8FDA-0608581E9D9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3723BFD6-B6A7-4CD2-8FDA-0608581E9D9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3723BFD6-B6A7-4CD2-8FDA-0608581E9D9A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3723BFD6-B6A7-4CD2-8FDA-0608581E9D9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3723BFD6-B6A7-4CD2-8FDA-0608581E9D9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3723BFD6-B6A7-4CD2-8FDA-0608581E9D9A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
