@@ -69,17 +69,26 @@ namespace GeoQuiz.X
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050002
-			public const int FalseButton = 2131034114;
-			
-			// aapt resource value: 0x7f050003
-			public const int NextButton = 2131034115;
-			
 			// aapt resource value: 0x7f050000
-			public const int QuestionTextView = 2131034112;
+			public const int AnswerTextView = 2131034112;
+			
+			// aapt resource value: 0x7f050005
+			public const int CheatButton = 2131034117;
+			
+			// aapt resource value: 0x7f050004
+			public const int FalseButton = 2131034116;
+			
+			// aapt resource value: 0x7f050006
+			public const int NextButton = 2131034118;
+			
+			// aapt resource value: 0x7f050002
+			public const int QuestionTextView = 2131034114;
 			
 			// aapt resource value: 0x7f050001
-			public const int TrueButton = 2131034113;
+			public const int ShowAnswerButton = 2131034113;
+			
+			// aapt resource value: 0x7f050003
+			public const int TrueButton = 2131034115;
 			
 			static Id()
 			{
@@ -95,7 +104,10 @@ namespace GeoQuiz.X
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int Cheat = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int Main = 2130903041;
 			
 			static Layout()
 			{
@@ -110,38 +122,53 @@ namespace GeoQuiz.X
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040005
-			public const int ApplicationName = 2130968581;
+			// aapt resource value: 0x7f040008
+			public const int ApplicationName = 2130968584;
 			
 			// aapt resource value: 0x7f040003
-			public const int CorrectToast = 2130968579;
+			public const int CheatButtonText = 2130968579;
+			
+			// aapt resource value: 0x7f040006
+			public const int CorrectJudgementToast = 2130968582;
+			
+			// aapt resource value: 0x7f040004
+			public const int CorrectToast = 2130968580;
 			
 			// aapt resource value: 0x7f040001
 			public const int FalseButton = 2130968577;
 			
-			// aapt resource value: 0x7f040004
-			public const int IncorrectToast = 2130968580;
+			// aapt resource value: 0x7f040007
+			public const int IncorrectJudgementToast = 2130968583;
+			
+			// aapt resource value: 0x7f040005
+			public const int IncorrectToast = 2130968581;
 			
 			// aapt resource value: 0x7f040002
 			public const int NextButton = 2130968578;
 			
-			// aapt resource value: 0x7f040006
-			public const int Question1 = 2130968582;
+			// aapt resource value: 0x7f04000b
+			public const int Question1 = 2130968587;
 			
-			// aapt resource value: 0x7f040007
-			public const int Question2 = 2130968583;
+			// aapt resource value: 0x7f04000c
+			public const int Question2 = 2130968588;
 			
-			// aapt resource value: 0x7f040008
-			public const int Question3 = 2130968584;
+			// aapt resource value: 0x7f04000d
+			public const int Question3 = 2130968589;
+			
+			// aapt resource value: 0x7f04000e
+			public const int Question4 = 2130968590;
+			
+			// aapt resource value: 0x7f04000f
+			public const int Question5 = 2130968591;
 			
 			// aapt resource value: 0x7f040009
-			public const int Question4 = 2130968585;
-			
-			// aapt resource value: 0x7f04000a
-			public const int Question5 = 2130968586;
+			public const int ShowAnswer = 2130968585;
 			
 			// aapt resource value: 0x7f040000
 			public const int TrueButton = 2130968576;
+			
+			// aapt resource value: 0x7f04000a
+			public const int WarningText = 2130968586;
 			
 			static String()
 			{

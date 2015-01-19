@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Android.App;
 using Android.Content;
-using Android.Util;
 using Android.Widget;
 using Android.OS;
 
@@ -29,6 +27,8 @@ namespace GeoQuiz.X
 		private TextView _questionTextView;
 		private int _currentQuestionIndex;
 		private readonly List<TrueFalse> _questionBank = new List<TrueFalse>();
+		private Button _cheatButton;
+		private bool _didTheyCheat;
 		private const string Tag = "MainActivity";
 		private const string KeyIndex = "index";
 
@@ -50,16 +50,33 @@ namespace GeoQuiz.X
 			_trueButton = FindViewById<Button>(Resource.Id.TrueButton);
 			_falseButton = FindViewById<Button>(Resource.Id.FalseButton);
 			_nextButton = FindViewById<ImageButton>(Resource.Id.NextButton);
+			_cheatButton = FindViewById<Button>(Resource.Id.CheatButton);
 			_questionTextView = FindViewById<TextView>(Resource.Id.QuestionTextView);
 
 			_trueButton.Click += (sender, args) => ScoreQuestion(true);
 			_falseButton.Click += (sender, args) => ScoreQuestion(false);
 			_nextButton.Click += (sender, args) => NextQuestion();
+			_cheatButton.Click += (sender, args) => Cheat();
 
 			if (bundle != null)
 				_currentQuestionIndex = bundle.GetInt(KeyIndex, 0);
 			LoadQuestions();
 			DisplayQuestion();
+		}
+
+		private void Cheat()
+		{
+			var i = new Intent(this, typeof(CheatActivity));
+			i.PutExtra(CheatActivity.ExtraAnswerIsTrue, _questionBank[_currentQuestionIndex].Answer);
+			StartActivityForResult(i, 0);
+		}
+
+		protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
+		{
+			base.OnActivityResult(requestCode, resultCode, data);
+			if (data == null) return;
+			_didTheyCheat = data.GetBooleanExtra(CheatActivity.ExtraDidTheyCheat, false);
+			_cheatButton.Enabled = false;
 		}
 
 		protected override void OnSaveInstanceState(Bundle outState)
@@ -80,6 +97,7 @@ namespace GeoQuiz.X
 		private void DisplayQuestion()
 		{
 			_questionTextView.Text = _questionBank[_currentQuestionIndex].QuestionText;
+			_cheatButton.Enabled = true;
 		}
 
 		private void NextQuestion()
@@ -87,11 +105,22 @@ namespace GeoQuiz.X
 			_currentQuestionIndex = (_currentQuestionIndex + 1) % _questionBank.Count;
 			DisplayQuestion();
 			_nextButton.Enabled = false;
+			_didTheyCheat = false;
 		}
 
 		private void ScoreQuestion(bool answer)
 		{
-			Toast.MakeText(this, (answer == _questionBank[_currentQuestionIndex].Answer) ? Resource.String.CorrectToast : Resource.String.IncorrectToast, ToastLength.Short).Show();
+			var isCorrect = (answer == _questionBank[_currentQuestionIndex].Answer);
+			var messageID = 0;
+			if (_didTheyCheat)
+			{
+				messageID = isCorrect ? Resource.String.CorrectJudgementToast : Resource.String.IncorrectJudgementToast; 
+			}
+			else
+			{
+				messageID = isCorrect ? Resource.String.CorrectToast : Resource.String.IncorrectToast; 
+			}
+			Toast.MakeText(this, messageID, ToastLength.Short).Show();
 			_nextButton.Enabled = true;
 		}
 	}

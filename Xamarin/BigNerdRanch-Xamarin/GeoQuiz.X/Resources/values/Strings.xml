@@ -3,9 +3,14 @@
 	<string name="TrueButton">True</string>
 	<string name="FalseButton">False</string>
 	<string name="NextButton">Next</string>
+	<string name="CheatButtonText">Cheat!</string>
 	<string name="CorrectToast">Correct!</string>
 	<string name="IncorrectToast">Incorrect!</string>
+	<string name="CorrectJudgementToast">You cheated!</string>
+	<string name="IncorrectJudgementToast">You cheated and STILL got it wrong!</string>
 	<string name="ApplicationName">GeoQuiz.X</string>
+	<string name="ShowAnswer">Show the answer</string>
+	<string name="WarningText">Are you sure you want to see the answer?\nCheaters never prosper!</string>
 	<string name="Question1">The Pacific Ocean is larger than the Atlantic Ocean.</string>
 	<string name="Question2">The Suez Canal connects the Red Sea and the Indian Ocean</string>
 	<string name="Question3">The source of the Nile River is in Eqypt.</string>
