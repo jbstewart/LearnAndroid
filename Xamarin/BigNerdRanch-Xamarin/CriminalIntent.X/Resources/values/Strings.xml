@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Hello">Hello World, Click Me!</string>
-    <string name="ApplicationName">CriminalIntent.X</string>
+	<string name="ApplicationName">CriminalIntent.X</string>
+	<string name="CrimeActivityTitle">CrimeActivity</string>
+	<string name="CrimeTitleHint">Enter a title for the crime.</string>
+	<string name="CrimeTitleLabel">Title</string>
+	<string name="CrimeDetailsLabel">Details</string>
+	<string name="CrimeSolvedLabel">Solved?</string>
 </resources>
