@@ -57,6 +57,7 @@
     <Compile Include="CrimeActivity.cs" />
     <Compile Include="CrimeFragment.cs" />
     <Compile Include="Model\Crime.cs" />
+    <Compile Include="Model\CrimeLab.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -69,7 +70,9 @@
     <AndroidResource Include="Resources\layout\Crime.axml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\values\Strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Icon.png" />
